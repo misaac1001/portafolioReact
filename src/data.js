@@ -1,27 +1,24 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "CodeSquad ",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+      "Utilizo tecnologías como HTML, CSS, SASS, BOOTSTRAP",
+    image: "https://res.cloudinary.com/daupcpuqs/image/upload/v1705895083/Portafolio/fotoCodeSquad_umyjad.jpg",
+    link: "https://codesquad-misaac.netlify.app/ https://codesquad-misaac.netlify.app/",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "Harry Potter Shop ",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reedbarger.com",
+      "Utilizo tecnología como Javascript, Bootstrap y SweetAlert",
+    image: "https://res.cloudinary.com/daupcpuqs/image/upload/v1705895082/Portafolio/logoHP_dngn1i.png",
+    link: "https://harrypotter-javascript.netlify.app/",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "Marian Jardín",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://jsbootcamp.com",
+      "Utilizo tecnologías como React JS, Firebase, React Router Dom y Bootstrap. ",
+    image: "https://res.cloudinary.com/daupcpuqs/image/upload/v1699912186/Proyecto%20React%20JS/imgPlantas_11_zo5zeg.jpg",
+    link: "https://jardinmaria-reactjs.netlify.app/",
   },
   {
     title: "Epic Todo App",
