@@ -3,7 +3,6 @@ import { About } from "./component/About";
 import { Contact } from "./component/Contact";
 import Projects from "./component/Projects";
 import { Skills } from "./component/Skills";
-import { Testimonials } from "./component/Testimonials";
 import { Navbar } from "./component/navbar/Navbar.jsx";
 
 
@@ -14,7 +13,6 @@ function App() {
       <About />
       <Projects />
       <Skills />
-      <Testimonials />
       <Contact />
     </main>
   );
