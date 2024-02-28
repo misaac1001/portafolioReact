@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { useSpring, animated } from "react-spring";
+import { animated } from "react-spring"; // No necesitamos useSpring de react-spring
+import classNames from "classnames"; // Importamos classNames para combinar clases condicionalmente
 
 export function Contact() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -13,12 +14,13 @@ export function Contact() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const fadeInProps = useSpring({
-    transform: `scale(${scrollPosition > 100 ? 0 : 1})`,
-  });
+  const fadeClasses = classNames(
+    "transition-transform",
+    scrollPosition > 100 ? "scale-100" : "scale-0"
+  );
 
   return (
-    <animated.div style={fadeInProps}>
+    <animated.div className={fadeClasses}>
       <section id="contact" className="relative">
         <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
           <form
