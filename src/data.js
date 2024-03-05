@@ -23,7 +23,7 @@ export const projects = [
   },
   {
     title: "Mi GitHub",
-    description: "Los invito a ver mi GitHub",
+    description: "Los invito a ver mi GitHub, donde tengo mis proyectos actuales y en proceso",
     image:
       "https://res.cloudinary.com/daupcpuqs/image/upload/v1707699283/Portafolio/github_juplrr.jpg",
     link: "https://github.com/misaac1001?tab=repositories",
@@ -72,6 +72,11 @@ export const skills = [
   },
   {
     title: "Git - GitHub",
+    image: "./project-1.gif",
+    link: "https://reactbootcamp.com",
+  },
+  {
+    title: "Tailwind",
     image: "./project-1.gif",
     link: "https://reactbootcamp.com",
   },
