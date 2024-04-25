@@ -4,15 +4,17 @@ import { Contact } from "./component/Contact";
 import { Navbar } from "./component/navbar/Navbar";
 import Projects from "./component/Projects";
 import { Skills } from "./component/Skills";
+import { SoftSkill } from "./component/SoftSkill";
 
 
 function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <main>
       <Navbar/>
       <About />
       <Projects id="projects" />
       <Skills />
+      <SoftSkill/>
       <Contact id="contact" />
     </main>
   );

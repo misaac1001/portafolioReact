@@ -4,7 +4,7 @@ export const projects = [
     description: "Utilizo tecnologías como HTML, CSS, SASS, BOOTSTRAP",
     image:
       "https://res.cloudinary.com/daupcpuqs/image/upload/v1705895083/Portafolio/fotoCodeSquad_umyjad.jpg",
-    link: "https://codesquad-misaac.netlify.app/ https://codesquad-misaac.netlify.app/",
+    link: "https://codesquad-misaac.netlify.app/",
   },
   {
     title: "Harry Potter Shop ",
@@ -23,7 +23,8 @@ export const projects = [
   },
   {
     title: "Mi GitHub",
-    description: "Los invito a ver mi GitHub, donde tengo mis proyectos actuales y en proceso",
+    description:
+      "Los invito a ver mi GitHub, donde tengo mis proyectos actuales y en proceso",
     image:
       "https://res.cloudinary.com/daupcpuqs/image/upload/v1707699283/Portafolio/github_juplrr.jpg",
     link: "https://github.com/misaac1001?tab=repositories",
