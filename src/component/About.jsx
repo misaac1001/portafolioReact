@@ -41,7 +41,6 @@ export const About = () => {
     }
   };
 
-  // Configurar el listener para el evento de desplazamiento
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
     return () => window.removeEventListener("scroll", toggleVisibility);
@@ -56,12 +55,9 @@ export const About = () => {
   };
 
   return (
-    <section
-      id="about"
-      className="container rounded-lg shadow-gray-400/50 mx-auto mt-10 lg:mt-40 flex flex-wrap"
-    >
+    <section id="about" className="container mx-auto mt-40 px-4">
       <div className="px-5 py-10 mx-auto lg:px-20">
-        <div className="flex justify-start gap-x-4 items-center">
+        <div className="flex flex-wrap justify-start gap-x-4 items-center">
           <img
             className="rounded-full w-20 h-20"
             src="https://res.cloudinary.com/daupcpuqs/image/upload/v1706875738/Portafolio/CV_Mariana_Isaac_-_desarrolladora_ztxr0h.png"
@@ -76,7 +72,7 @@ export const About = () => {
             onClick={() =>
               window.open("https://linkedin.com/in/mariana-isaac10/", "_blank")
             }
-            className="text-white bg-pink-600 border-0 px-5 focus:outline-none hover:bg-pink-300 text-md flex items-center justify-center rounded-full"
+            className="text-white mt-4 lg:mt-0 bg-pink-600 border-0 px-5 focus:outline-none hover:bg-pink-300 text-md flex items-center justify-center rounded-full"
             style={{ height: "2rem" }}
           >
             Disponible para trabajar
@@ -85,7 +81,7 @@ export const About = () => {
         <h1 className="text-white text-4xl md:text-5xl font-bold flex flex-row gap-x-4 py-4">
           Soy Mariana
         </h1>
-        <div className="flex py-4 ">
+        <div className="flex flex-col py-4 ">
           <h2 className="text-lg md:text-xl ">
             <span className="text-pink-400">
               Desarrolladora Frontend con React JS
@@ -97,12 +93,12 @@ export const About = () => {
             funcionalidad y diseño.
           </h2>
         </div>
-        <div className="flex  gap-x-2 py-4 ">
+        <div className="flex flex-wrap justify-center lg:justify-start py-4 ">
           {socialLinks.map((link) => (
             <button
               key={link.label}
               onClick={() => window.open(link.url, "_blank")}
-              className={`${link.bgColor} ${link.hoverColor} text-white font-bold py-2 px-4 rounded flex items-center`}
+              className={`${link.bgColor} ${link.hoverColor} text-white font-bold py-2 px-2 rounded flex  m-2`}
             >
               {link.icon}
               {link.label}
@@ -112,7 +108,7 @@ export const About = () => {
       </div>
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-2 right-2 z-50 p-2 rounded-full text-white bg-pink-500 hover:bg-pink-400 transition duration-300 ease-in-out ${
+        className={`fixed bottom-2 right-2 z-10 p-2 rounded-full text-white bg-pink-500 hover:bg-pink-400 transition duration-300 ease-in-out ${
           isVisible ? "inline-flex" : "hidden"
         }`}
       >

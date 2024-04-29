@@ -4,7 +4,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="container rounded-lg shadow-gray-400/50 mx-auto mt-30"
+      className="container rounded-lg shadow-gray-400/50 mx-auto mt-30 w-full "
     >
       <div className="px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">

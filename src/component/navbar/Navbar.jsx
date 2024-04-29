@@ -63,11 +63,13 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-10 z-10  left-1/2 -translate-x-1/2 px-2 py-1 rounded-full">
-      <div className="sm:hidden">
+    <nav className="fixed top-10 z-10  left-1/2 -translate-x-1/2 px-2 py-1 rounded-full"
+     >
+      <div className="sm:hidden flex"
+      >
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-white focus:outline-none"
+          className="text-white focus:outline-none "
         >
           {isMenuOpen ? (
             // Ícono para cerrar el menú (X)
@@ -81,8 +83,10 @@ export function Navbar() {
       </div>
       <ul
         className={`${
-          isMenuOpen ? "flex " : "hidden sm:flex"
-        } justify-center items-center list-none p-0 m-0 w-full`}
+          isMenuOpen ? "flex " : "hidden sm:flex lg"
+        } flex-col lg:flex-row  justify-center items-center list-none w-full`}
+        
+        
       >
         {navItems.map((link) => (
           <li
@@ -99,22 +103,6 @@ export function Navbar() {
           </li>
         ))}
       </ul>
-      {/* <ul className="inline-flex justify-center items-center  list-none p-0 m-0 w-full ">
-        {navItems.map((link) => (
-          <li
-            key={link.label}
-            className="relative block px-2 py-2 transition hover:text-pink-400 whitespace-nowrap"
-          >
-            <a
-              href={link.url}
-              className="text-white hover:text-pink-500 no-underline text-md px-3"
-              aria-label={link.label}
-            >
-              {link.title}
-            </a>
-          </li>
-        ))}
-      </ul> */}
     </nav>
   );
 }
