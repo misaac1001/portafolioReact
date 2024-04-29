@@ -1,6 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./navbar.css";
+import LunchDiningIcon from '@mui/icons-material/LunchDining';
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+
 export function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navItems = [
     {
       title: "Proyectos",
@@ -59,8 +63,27 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-6 z-10  left-1/2 -translate-x-1/2 px-2 rounded-full">
-      <ul className="inline-flex justify-center items-center  list-none p-0 m-0 w-full ">
+    <nav className="fixed top-10 z-10  left-1/2 -translate-x-1/2 px-2 py-1 rounded-full">
+      <div className="sm:hidden">
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="text-white focus:outline-none"
+        >
+          {isMenuOpen ? (
+            // Ícono para cerrar el menú (X)
+            <HighlightOffIcon/>
+            
+          ) : (
+            // Ícono de menú de hamburguesa
+            <LunchDiningIcon/>
+          )}
+        </button>
+      </div>
+      <ul
+        className={`${
+          isMenuOpen ? "flex " : "hidden sm:flex"
+        } justify-center items-center list-none p-0 m-0 w-full`}
+      >
         {navItems.map((link) => (
           <li
             key={link.label}
@@ -76,6 +99,22 @@ export function Navbar() {
           </li>
         ))}
       </ul>
+      {/* <ul className="inline-flex justify-center items-center  list-none p-0 m-0 w-full ">
+        {navItems.map((link) => (
+          <li
+            key={link.label}
+            className="relative block px-2 py-2 transition hover:text-pink-400 whitespace-nowrap"
+          >
+            <a
+              href={link.url}
+              className="text-white hover:text-pink-500 no-underline text-md px-3"
+              aria-label={link.label}
+            >
+              {link.title}
+            </a>
+          </li>
+        ))}
+      </ul> */}
     </nav>
   );
 }

@@ -3,7 +3,7 @@ export function Contact() {
   
   return (
     <section id="contact" className="relative">
-      <div className="container px-5 py-10 mx-auto flex justify-center mt-5 mb-10">
+      <div className="container px-5 py-10 mx-auto flex justify-center mb-10">
         <div className="lg:w-1/2 md:w-2/3 w-full flex flex-col items-center">
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             ¡Contácteme!

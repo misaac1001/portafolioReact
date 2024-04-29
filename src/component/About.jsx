@@ -58,9 +58,9 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="container rounded-lg shadow-gray-400/50 mx-auto mt-40"
+      className="container rounded-lg shadow-gray-400/50 mx-auto mt-10 lg:mt-40 flex flex-wrap"
     >
-      <div className="px-5 py-10 mx-auto lg:px-40">
+      <div className="px-5 py-10 mx-auto lg:px-20">
         <div className="flex justify-start gap-x-4 items-center">
           <img
             className="rounded-full w-20 h-20"
@@ -97,7 +97,7 @@ export const About = () => {
             funcionalidad y diseño.
           </h2>
         </div>
-        <div className="flex gap-x-2 py-4">
+        <div className="flex  gap-x-2 py-4 ">
           {socialLinks.map((link) => (
             <button
               key={link.label}

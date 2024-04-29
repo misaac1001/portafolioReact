@@ -4,7 +4,7 @@ export function SoftSkill() {
   return (
     <section className="container rounded-lg shadow-gray-400/50 mx-auto ">
       <div className="px-5 py-10 mx-auto lg:px-40">
-        <div className=" mb-20 text-lg md:text-xl">
+        <div className=" text-lg md:text-xl">
           <h1 className="text-center sm:text-4xl text-3xl font-medium title-font text-white mb-8 flex justify-center gap-x-4 items-center">
             Un poco mas sobre mi
             <InfoIcon style={{ fontSize: "1.5rem", color: "white", paddingBottom:"5px", marginBottom: "10px" }}/> 
