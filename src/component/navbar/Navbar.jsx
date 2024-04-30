@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./navbar.css";
-import LunchDiningIcon from '@mui/icons-material/LunchDining';
-import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import LunchDiningIcon from "@mui/icons-material/LunchDining";
+import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,30 +63,25 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-10 z-10  left-1/2 -translate-x-1/2 px-2 py-1 rounded-full"
-     >
-      <div className="sm:hidden flex"
-      >
+    <nav className="fixed top-10 z-10  left-1/2 -translate-x-1/2 px-2 py-1 rounded-full">
+      <div className="sm:hidden flex">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-white focus:outline-none "
         >
           {isMenuOpen ? (
             // Ícono para cerrar el menú (X)
-            <HighlightOffIcon/>
-            
+            <HighlightOffIcon />
           ) : (
             // Ícono de menú de hamburguesa
-            <LunchDiningIcon/>
+            <LunchDiningIcon />
           )}
         </button>
       </div>
       <ul
         className={`${
           isMenuOpen ? "flex " : "hidden sm:flex lg"
-        } flex-col lg:flex-row  justify-center items-center list-none w-full`}
-        
-        
+        } flex-col lg:flex-row md:flex-row  justify-center items-center list-none w-full`}
       >
         {navItems.map((link) => (
           <li

@@ -79,7 +79,7 @@ export const About = () => {
           </button>
         </div>
         <h1 className="text-white text-4xl md:text-5xl font-bold flex flex-row gap-x-4 py-4">
-          Soy Mariana
+          Soy Mariana 
         </h1>
         <div className="flex flex-col py-4 ">
           <h2 className="text-lg md:text-xl ">
